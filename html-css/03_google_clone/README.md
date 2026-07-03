@@ -1,19 +1,27 @@
-# Getting Started
-Install the dependencies and run the project
-```
-npm install
-npm start
-```
+# 🔍 Google Homepage Clone
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+A simple clone of the Google homepage built using HTML and CSS. This project focuses on recreating the layout and styling of Google's search page.
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+## 📸 Preview
 
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+![Project Preview](preview.png)
 
-Happy Coding!
+## 🚀 Features
+
+- Google-style homepage
+- Search bar design
+- Styled buttons
+- Responsive layout
+
+## 🛠️ Built With
+
+- HTML5
+- CSS3
+
+## ▶️ Run Locally
+
+Open `index.html` in your browser.
+
+## 👨‍💻 Author
+
+Talha Ahmer

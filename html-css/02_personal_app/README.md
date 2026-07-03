@@ -1,20 +1,26 @@
-# Getting Started
-Install the dependencies and run the project in watch mode
-```
-npm install
-npm run build # or watch to rebuild on change
-open index.html
-```
-Note that using Webpack is obselete and this archive has been provided
-for compatibility reasons. Prefer using Vite, check it at https://vitejs.dev
-## About Scrimba
+# 👤 Personal Profile App
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+A simple personal profile webpage built with HTML and CSS. This project showcases basic information using a clean and responsive layout.
 
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+## 📸 Preview
 
-Happy Coding!
+![Project Preview](preview.png)
+
+## 🚀 Features
+
+- Responsive layout
+- Custom styling
+- Clean typography
+
+## 🛠️ Built With
+
+- HTML5
+- CSS3
+
+## ▶️ Run Locally
+
+Open `index.html` in your browser.
+
+## 👨‍💻 Author
+
+Talha Ahmer
