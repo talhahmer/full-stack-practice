@@ -1,4 +1,4 @@
-# 🏞️ Home Town Website - Visit Chakwal
+# 🏞️ Hometown Website - Visit Chakwal
 
 A simple and responsive tourism landing page built with **HTML** and **CSS**. The webpage highlights some of the most popular attractions in Chakwal, Pakistan, including Katas Raj Temples, Kallar Kahar Lake, and the Salt Range.
 
