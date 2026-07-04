@@ -8,19 +8,17 @@ var API_KEY = 'NpRvp4rxQt7jYkbu95fWvCMrZKxyQKlWcNZfzeopGfI';
 
 const loadData = (options) => {
   fetch(options.url)
-    .then(function(response){
-        return response.json()
+    .then(function (response) {
+      return response.json()
     })
-    .then(function(data){ 
-       if (options.onSuccess) options.onSuccess(data)
+    .then(function (data) {
+      if (options.onSuccess) options.onSuccess(data)
     })
 }
 
 const App = (props) => {
   let [photos, setPhotos] = useState([]);
-  
-  // CHALLENGE:
-  // Change the query to one of your interests
+
   let [query, setQuery] = useState("code");
   const queryInput = useRef(null);
 
@@ -46,37 +44,36 @@ const App = (props) => {
     e.preventDefault();
     setQuery(queryInput.current.value);
   };
-  
+
   return (
     <div className="box">
       <h2>{props.emoji}</h2>
       <h1>{props.name}'s website</h1>
       <div className="grid">
-      { query ?
+        {query ?
           photos.map(photo => {
-          return (
-            <div key={photo.id} className="item">
-              <img
-                className="img"
-                src={photo.urls.regular}
-              />
-              <div className="caption">
-                <span className="credits">Photo by 
-                  <a href={photo.user.links.html + utm}>   {photo.user.name} 
-                  </a>
-                  <span> on </span> 
-                  <a href={"https://unsplash.com" + utm}>
-                    Unsplash
-                  </a>
-                </span>
+            return (
+              <div key={photo.id} className="item">
+                <img
+                  className="img"
+                  src={photo.urls.regular}
+                />
+                <div className="caption">
+                  <span className="credits">Photo by
+                    <a href={photo.user.links.html + utm}>   {photo.user.name}
+                    </a>
+                    <span> on </span>
+                    <a href={"https://unsplash.com" + utm}>
+                      Unsplash
+                    </a>
+                  </span>
+                </div>
               </div>
-            </div>
             );
-        }) : ""}
+          }) : ""}
       </div>
     </div>
   );
 };
 
-// CHALLENGE: add your own name and emoji to the website
-ReactDOM.render(<App name="Talha" emoji="🧑‍💻"/>, document.getElementById("root"));
+ReactDOM.render(<App name="Talha" emoji="🧑‍💻" />, document.getElementById("root"));

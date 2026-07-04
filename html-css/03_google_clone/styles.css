@@ -1,11 +1,5 @@
-/*
-Challenge:
-Wrap the buttons in a flexbox div and center them.
-Give the div a "btn-wrapper" class.
-*/
-
 .main {
-    margin-top: 100px;    
+    margin-top: 100px;
 }
 
 .logo-img {

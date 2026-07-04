@@ -3,7 +3,7 @@ function setTheme(theme) {
     if (theme === 'light') {
         root.style.setProperty('--bg-color', '#ECF2FF');
         root.style.setProperty('--text-color', '#2B283A');
-        root.style.setProperty('--title-color', '#4A4E74');        
+        root.style.setProperty('--title-color', '#4A4E74');
     } else if (theme === 'dark') {
         root.style.setProperty('--bg-color', '#2B283A');
         root.style.setProperty('--text-color', '#ECF2FF');
@@ -11,6 +11,4 @@ function setTheme(theme) {
     }
 }
 
-// 1. Try to change the theme to 'dark'
-// 2. Run the code to see that it works
 setTheme('dark');
