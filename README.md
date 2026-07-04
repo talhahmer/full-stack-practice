@@ -23,6 +23,14 @@ This repository contains all the projects, exercises, and challenges I complete 
 
 ```text
 html-css/
+├── 01_lets_make_a_cake/
+├── 02_personal_app/
+├── 03_google_clone/
+├── 04_business_card/
+├── 05_space_exploration_layout/
+├── 06_birthday_website/
+└── 07_hometown_website/
+
 javascript/
 react/
 node-express/
