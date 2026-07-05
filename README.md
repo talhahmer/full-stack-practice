@@ -33,6 +33,7 @@ html-css/
 
 javascript/
 ├── 01_counter_app/
+├── 02_basketball_scoreboard/
 
 react/
 node-express/
