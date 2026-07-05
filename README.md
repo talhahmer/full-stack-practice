@@ -32,6 +32,8 @@ html-css/
 └── 07_hometown_website/
 
 javascript/
+├── 01_counter_app/
+
 react/
 node-express/
 databases/
