@@ -35,6 +35,7 @@ javascript/
 ├── 01_counter_app/
 ├── 02_basketball_scoreboard/
 ├── 03_blackjack_game/
+├── 04_password_generator/
 
 react/
 node-express/
