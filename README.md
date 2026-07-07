@@ -34,6 +34,7 @@ html-css/
 javascript/
 ├── 01_counter_app/
 ├── 02_basketball_scoreboard/
+├── 03_blackjack_game/
 
 react/
 node-express/
