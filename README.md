@@ -36,6 +36,7 @@ javascript/
 ├── 02_basketball_scoreboard/
 ├── 03_blackjack_game/
 ├── 04_password_generator/
+├── 05_lead_tracker_extension/
 
 react/
 node-express/
