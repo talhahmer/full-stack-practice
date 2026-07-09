@@ -4,7 +4,7 @@ A simple password generator built with **HTML, CSS, and JavaScript**.
 
 ## 📸 Preview
 
-Generate two random passwords with a single click.
+![Project Preview](preview.png)
 
 ## ✨ Features
 
