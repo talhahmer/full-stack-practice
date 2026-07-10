@@ -37,6 +37,7 @@ javascript/
 ├── 03_blackjack_game/
 ├── 04_password_generator/
 ├── 05_lead_tracker_extension/
+├── 06_unit_converter/
 
 react/
 node-express/
