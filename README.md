@@ -52,7 +52,7 @@ Each folder contains practice projects, coding exercises, and mini applications 
 
 - Strengthen frontend and backend development skills
 - Build practical projects while learning
-- Practice writing clean and maintainable code
+- Practice writing clean, reusable and maintainable code
 - Learn Git and GitHub workflows
 - Deploy applications using Netlify
 - Track my progress throughout my full-stack journey
@@ -66,3 +66,7 @@ Larger, production-ready portfolio projects are maintained in separate repositor
 ---
 
 Happy Coding! 🚀
+
+## 👨‍💻 Author
+
+**Talha Ahmer**
