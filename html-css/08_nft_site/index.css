@@ -1,117 +1,208 @@
-body{
+/* ======================
+   Global Styles
+====================== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     color: #2b283a;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
+    line-height: 1.6;
 }
 
-/* typography */
+/* ======================
+   Typography
+====================== */
 
-h1, h3{
-    margin: 0;
-}
-
-h1{
-    color: whitesmoke;
-    font-size: 36px;
-}
-
-h2{
+h1,
+h2,
+h3 {
     margin-top: 0;
 }
 
-h3{
+h1 {
+    color: #fff;
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 1.9rem;
+}
+
+h3 {
     color: #d0aaff;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
-p{
-    line-height: 23px;
+p {
+    margin-bottom: 1.2em;
 }
 
-/* links */
+/* ======================
+   Links
+====================== */
 
-a{
+a {
     color: #ef5839;
-    text-decoration: underline dotted; 
+    text-decoration: underline dotted;
 }
 
-a:hover, a:active{
+a:hover,
+a:focus {
     color: #d4b44c;
 }
 
-/* 
-Challenge:
-1. Refactor the CSS for these button-style
-   links using two classes on each link
-   element.
-⚠️ Think what to call the new class you
-   will need to create.
-*/
+/* ======================
+   Buttons
+====================== */
 
-.btn{
-    padding: 10px 19px;
-    border-radius: 4.6px;
-    font-weight: 500;
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 2rem 0;
+}
+
+.btn {
     text-decoration: none;
     display: inline-block;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: .3s;
 }
 
-.btn-dark{
+.btn-dark {
     background: #5f29a3;
-    color: whitesmoke
+    color: white;
 }
 
-.btn-mid{
-    background: #F0E0FF; 
-    color: #5f29a3; 
+.btn-mid {
+    background: #f0e0ff;
+    color: #5f29a3;
 }
 
-.btn-light{
-    background: whitesmoke;
-    color: #5f29a3; 
+.btn-light {
+    background: white;
+    color: #5f29a3;
 }
 
-.btn:hover, 
-.btn:active{
-    background-color: #f3e885;
+.btn:hover,
+.btn:focus {
+    background: #f3e885;
     color: #2b238a;
 }
 
-/* layout */
+/* ======================
+   Layout
+====================== */
 
-header, section, footer{
-    padding: 45px 0;
+header,
+section,
+footer {
+    padding: 4rem 0;
 }
 
-header, .section-two{
-    background-color: #5f29a3;
+header,
+.section-two {
+    background: #5f29a3;
 }
 
-.section-two{
-    color: whitesmoke;
+.section-two {
+    color: white;
 }
 
-.container{
-    width: 620px;
+.container {
+    width: min(90%, 1100px);
     margin: 0 auto;
 }
 
-.main-image{
-    width:100%;
+.main-image {
+    width: 100%;
+    border-radius: 6px;
+    display: block;
 }
 
-.section-two-image-container{
+.section-two-image-container {
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
+    margin: 2rem 0;
 }
 
-.feature-image{
-    width: 300px;
-    border-radius: 4.6px;
+.feature-image {
+    width: 50%;
+    border-radius: 6px;
+    object-fit: cover;
 }
 
-footer{
+footer {
     text-align: center;
     color: #5f29a3;
+}
+
+/* ======================
+   Tablet
+====================== */
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .section-two-image-container {
+        gap: 15px;
+    }
+}
+
+/* ======================
+   Mobile
+====================== */
+
+@media (max-width: 600px) {
+
+    header,
+    section,
+    footer {
+        padding: 3rem 0;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.05rem;
+    }
+
+    .section-two-image-container {
+        flex-direction: column;
+    }
+
+    .feature-image {
+        width: 100%;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .btn {
+        text-align: center;
+        width: 100%;
+    }
 }
