@@ -29,7 +29,10 @@ html-css/
 ├── 04_business_card/
 ├── 05_space_exploration_layout/
 ├── 06_birthday_website/
-└── 07_hometown_website/
+├── 07_hometown_website/
+├── 08_nft_site/
+├── 09_portfolio_site/
+└── 10_coworking_space_site/
 
 javascript/
 ├── 01_counter_app/
@@ -37,7 +40,7 @@ javascript/
 ├── 03_blackjack_game/
 ├── 04_password_generator/
 ├── 05_lead_tracker_extension/
-├── 06_unit_converter/
+└── 06_unit_converter/
 
 react/
 node-express/
