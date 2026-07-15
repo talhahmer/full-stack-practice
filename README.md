@@ -40,7 +40,8 @@ javascript/
 ├── 03_blackjack_game/
 ├── 04_password_generator/
 ├── 05_lead_tracker_extension/
-└── 06_unit_converter/
+├── 06_unit_converter/
+└── 07_cookie_consent/
 
 react/
 node-express/
