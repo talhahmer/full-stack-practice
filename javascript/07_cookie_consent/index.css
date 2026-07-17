@@ -6,7 +6,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     color: #222;
 }
 
@@ -31,12 +31,11 @@ h3 {
 p {
     font-size: 18px;
     line-height: 28px;
-
 }
 
 ul {
     list-style: none;
-    padding: 5px 0 0 0;
+    padding: 5px 0 0;
 }
 
 li {
@@ -48,30 +47,31 @@ li {
 }
 
 .li-green {
-    background-color: #E5FDEA
+    background-color: #E5FDEA;
 }
 
 .li-yellow {
-    background-color: #FCFDD6
+    background-color: #FCFDD6;
 }
 
 .li-blue {
-    background-color: #E5F9FE
+    background-color: #E5F9FE;
 }
 
 .li-pink {
-    background-color: #FCF1FE
+    background-color: #FCF1FE;
 }
 
 /* layout */
 
 img {
     width: 100%;
+    display: block;
 }
 
 main {
-    width: 400px;
-    margin: 0 auto;
+    width: min(900px, 90%);
+    margin: 50px auto;
 }
 
 /* modal */
@@ -84,10 +84,13 @@ main {
     top: 0;
     bottom: 0;
     margin: auto;
-    height: 420px;
+
+    /* Keep original size */
     width: 350px;
+    height: 420px;
+
     border-radius: 5px;
-    box-shadow: 0px 0px 6px 2px #666;
+    box-shadow: 0 0 6px 2px #666;
     background-color: #212529;
     color: whitesmoke;
 }
@@ -111,7 +114,7 @@ main {
 .modal-close-btn {
     font-size: 22px;
     font-weight: bold;
-    background-color: transparent;
+    background: transparent;
     border: 1px solid transparent;
     color: whitesmoke;
 }
@@ -179,4 +182,44 @@ input {
 .idiot-gif img {
     box-shadow: 1px 1px 3px #999;
     border-radius: 5px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 38px;
+        line-height: 48px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p,
+    li {
+        font-size: 18px;
+    }
+
+    main {
+        width: 92%;
+        margin: 30px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    p,
+    li {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    main {
+        width: 95%;
+    }
 }
