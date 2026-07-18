@@ -1,0 +1,300 @@
+html,
+body {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    overflow-x: hidden;
+    background-color: #fffaf8;
+    color: #3f3336;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+body.modal-open::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: rgba(19, 16, 16, 0.5);
+    z-index: 900;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ======================
+   Typography
+====================== */
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+h1,
+h2 {
+    color: #EED6D3;
+    margin: 0;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h3 {
+    margin: 25px;
+}
+
+/* ======================
+   Layout
+====================== */
+
+header {
+    background-color: #67595E;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: min(370px, 100%);
+    margin: 0 auto;
+    padding: 12px 15px;
+}
+
+.pumpkin-img {
+    width: 80px;
+}
+
+main {
+    padding: 20px 15px;
+}
+
+.controls-container {
+    display: flex;
+    flex-direction: column;
+    width: min(320px, 100%);
+    margin: 0 auto;
+}
+
+/* ======================
+   Controls
+====================== */
+
+.emotion-radios {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #bcbcbc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #bcbcbc;
+    padding: 8px;
+}
+
+.radio:last-child {
+    border-bottom: none;
+}
+
+label {
+    font-size: 14px;
+    padding: 3px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.highlight {
+    background-color: #fff0ee;
+    color: #bd301d;
+    font-weight: bold;
+    accent-color: #bd301d;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.gifs-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0;
+}
+
+.gifs-check-label {
+    width: unset;
+    margin-right: 5px;
+}
+
+.get-image-btn {
+    width: 100%;
+    background-color: #67595e;
+    color: #eed6d3;
+    padding: 15px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.get-image-btn:hover {
+    background-color: #56484d;
+}
+
+/* ======================
+   Modal
+====================== */
+
+.meme-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #67595e;
+    border-radius: 16px;
+    width: min(92vw, 460px);
+    min-height: 320px;
+    padding: 24px 20px 20px;
+    background-color: #fff0ee;
+    box-shadow: 0 20px 45px rgba(103, 89, 94, 0.25);
+    z-index: 1000;
+}
+
+.cat-img {
+    width: 100%;
+    max-width: 340px;
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.meme-modal-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: 2px solid #555;
+    color: #555;
+    border-radius: 50%;
+    padding: 2px 7px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.meme-modal-close-btn:hover {
+    color: white;
+    background-color: #bd301d;
+    border-color: #bd301d;
+}
+
+/* ======================
+   Tablet
+====================== */
+
+@media (max-width: 768px) {
+
+    .header-inner {
+        width: 100%;
+    }
+
+    .pumpkin-img {
+        width: 65px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .get-image-btn {
+        font-size: 20px;
+    }
+}
+
+/* ======================
+   Mobile
+====================== */
+
+@media (max-width: 480px) {
+
+    .header-inner {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .pumpkin-img {
+        width: 60px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    h3 {
+        margin: 20px 10px;
+        font-size: 18px;
+    }
+
+    .controls-container {
+        width: 95%;
+        max-width: 320px;
+    }
+
+    .gifs-check {
+        justify-content: center;
+    }
+
+    .get-image-btn {
+        font-size: 18px;
+        padding: 14px;
+    }
+
+    .meme-modal {
+        width: min(94vw, 420px);
+        padding: 18px 15px 15px;
+        min-height: 280px;
+    }
+
+    .cat-img {
+        width: 100%;
+        height: auto;
+    }
+}
