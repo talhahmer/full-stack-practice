@@ -41,7 +41,8 @@ javascript/
 ├── 04_password_generator/
 ├── 05_lead_tracker_extension/
 ├── 06_unit_converter/
-└── 07_cookie_consent/
+├── 07_cookie_consent/
+└── 08_meme_picker/
 
 react/
 node-express/
