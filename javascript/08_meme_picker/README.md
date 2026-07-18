@@ -4,7 +4,7 @@ A fun and interactive meme picker built with **HTML, CSS, and JavaScript**. Choo
 
 ## 📸 Preview
 
-![Project Preview](./images/screenshot.png)
+![Project Preview](./preview.png)
 
 ## ✨ Features
 
@@ -18,7 +18,7 @@ A fun and interactive meme picker built with **HTML, CSS, and JavaScript**. Choo
 
 - HTML5
 - CSS3
-- JavaScript (ES6 Modules)
+- JavaScript (ES6)
 - Google Fonts (Karla)
 
 ## 🚀 How to Run
