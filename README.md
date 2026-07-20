@@ -42,7 +42,8 @@ javascript/
 ├── 05_lead_tracker_extension/
 ├── 06_unit_converter/
 ├── 07_cookie_consent/
-└── 08_meme_picker/
+├── 08_meme_picker/
+└── 09_twitter_clone/
 
 react/
 node-express/
